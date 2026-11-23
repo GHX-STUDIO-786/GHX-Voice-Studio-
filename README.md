@@ -1,8 +1,8 @@
-# GHX Voice Studio V4
+# GHX VOICE STUDIO
 
 **Advanced AI Voice Studio** by **GHX Studio** — Voice Cloning & Text-to-Speech in **600+ languages**.
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/GHX-STUDIO-786/GHX-VOICE-STUDIO-V4/blob/main/GHX_Voice_Studio_V4.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/GHX-STUDIO-786/GHX-Voice-Studio-/blob/main/GHX_VOICE_STUDIO.ipynb)
 [![License](https://img.shields.io/badge/license-Private-red.svg)]()
 [![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)]()
 [![Gradio](https://img.shields.io/badge/UI-Gradio-orange.svg)]()
@@ -24,7 +24,7 @@
 
 ## Quick Start (Users)
 
-1. Click **Open in Colab** above (or open `GHX_Voice_Studio_V4.ipynb`).
+1. Click **Open in Colab** above (or open `GHX_VOICE_STUDIO.ipynb`).
 2. **Runtime → Change runtime type → GPU (T4)** → Save.
 3. **Step 1:** Enter your **registered Gmail** → Run the cell.
 4. Wait for `Access Granted`.
@@ -39,7 +39,6 @@
 ### Support
 
 - **WhatsApp:** [0341-4657696](https://wa.me/923414657696)
-- **Email:** gulhassankalera787@gmail.com
 
 ---
 
@@ -48,8 +47,8 @@
 ### Repo files
 
 ```
-GHX-VOICE-STUDIO-V4/
-├── GHX_Voice_Studio_V4.ipynb      # Main Colab notebook
+GHX-Voice-Studio-/
+├── GHX_VOICE_STUDIO.ipynb      # Main Colab notebook
 ├── GHX_Access_Control_AppsScript.gs  # Access API (reference copy)
 ├── GHX_Sheet_Template_README.txt  # Sheet setup notes
 └── README.md
@@ -86,27 +85,27 @@ GHX-VOICE-STUDIO-V4/
 ## Push to GitHub (first time)
 
 ```bash
-# 1) Create empty repo on GitHub named: GHX-VOICE-STUDIO-V4
+# 1) Create empty repo on GitHub named: GHX-Voice-Studio-
 # 2) On your PC:
 
-git clone https://github.com/AS-STUDIO-PRO/GHX-VOICE-STUDIO-V4.git
-cd GHX-VOICE-STUDIO-V4
+git clone https://github.com/GHX-STUDIO-786/GHX-Voice-Studio-.git
+cd GHX-Voice-Studio-
 
 # Copy these files into the folder:
-#   GHX_Voice_Studio_V4.ipynb
+#   GHX_VOICE_STUDIO.ipynb
 #   GHX_Access_Control_AppsScript.gs
 #   GHX_Sheet_Template_README.txt
 #   README.md
 
 git add .
-git commit -m "GHX Voice Studio V4 by GHX Studio"
+git commit -m "GHX VOICE STUDIO by GHX Studio"
 git push -u origin main
 ```
 
 Working Colab URL format:
 
 ```text
-https://colab.research.google.com/github/AS-STUDIO-PRO/GHX-VOICE-STUDIO-V4/blob/main/GHX_Voice_Studio_V4.ipynb
+https://colab.research.google.com/github/GHX-STUDIO-786/GHX-Voice-Studio-/blob/main/GHX_VOICE_STUDIO.ipynb
 ```
 
 ---
@@ -119,4 +118,4 @@ Unauthorized redistribution is not allowed.
 
 ---
 
-**Developed by GHX Studio** · WhatsApp [0341-4657696](https://wa.me/923414657696) · gulhassankalera787@gmail.com
+**Developed by GHX Studio** · WhatsApp [0341-4657696](https://wa.me/923414657696)

@@ -1,4 +1,4 @@
-// GHX Voice Studio V4 - Access Control
+// GHX VOICE STUDIO - Access Control
 // Deploy: Deploy > New deployment > Web app
 // Execute as: Me | Who has access: Anyone
 //

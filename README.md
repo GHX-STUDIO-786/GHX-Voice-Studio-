@@ -2,7 +2,7 @@
 
 **AI Voice Generation & Voice Cloning** — Text-to-Speech, voice cloning, saved voice profiles, and subtitle export in 600+ languages.
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/GHX-STUDIO-786/GHX-Voice-Studio-/blob/main/GHX_Voice_Studio_V4.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/GHX-STUDIO-786/GHX VOICE STUDIO/blob/main/GHX_VOICE_STUDIO.ipynb)
 [![License](https://img.shields.io/badge/license-Private-red.svg)]()
 [![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)]()
 [![Gradio](https://img.shields.io/badge/UI-Gradio-orange.svg)]()
@@ -22,7 +22,7 @@
 
 ## Quick Start
 
-1. Open the [GHX VOICE STUDIO Colab notebook](https://colab.research.google.com/github/GHX-STUDIO-786/GHX-Voice-Studio-/blob/main/GHX_Voice_Studio_V4.ipynb).
+1. Open the [GHX VOICE STUDIO Colab notebook](https://colab.research.google.com/github/GHX-STUDIO-786/GHX VOICE STUDIO/blob/main/GHX_VOICE_STUDIO.ipynb).
 2. Select **Runtime → Change runtime type → GPU (T4)** and save.
 3. In **Step 1**, enter your registered Gmail and run the cell.
 4. Wait for **Access Granted**.
@@ -42,8 +42,8 @@
 ## Repository Files
 
 ```
-GHX-Voice-Studio-/
-├── GHX_Voice_Studio_V4.ipynb
+GHX VOICE STUDIO/
+├── GHX_VOICE_STUDIO.ipynb
 ├── GHX_Access_Control_AppsScript.gs
 ├── GHX_Sheet_Template_README.txt
 └── README.md

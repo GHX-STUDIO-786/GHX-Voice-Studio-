@@ -1,4 +1,4 @@
-GHX Voice Studio V4 — Paid Access Setup (Step by step)
+GHX VOICE STUDIO — Paid Access Setup (Step by step)
 ======================================================
 
 1) GOOGLE SHEET BANAO

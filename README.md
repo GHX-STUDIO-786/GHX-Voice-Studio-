@@ -1,121 +1,63 @@
 # GHX VOICE STUDIO
 
-**Advanced AI Voice Studio** by **GHX Studio** — Voice Cloning & Text-to-Speech in **600+ languages**.
+**Advanced AI Voice Studio** by **GHX Studio** — Voice Cloning & Text-to-Speech in 600+ languages.
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/GHX-STUDIO-786/GHX-Voice-Studio-/blob/main/GHX_VOICE_STUDIO.ipynb)
-[![License](https://img.shields.io/badge/license-Private-red.svg)]()
-[![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)]()
-[![Gradio](https://img.shields.io/badge/UI-Gradio-orange.svg)]()
 
----
+## Access control
+
+GHX VOICE STUDIO now uses the **GHX Cloudflare license server**. Google Sheets and the old Apps Script are no longer used by the active notebook.
+
+- Owner dashboard: https://ghx-voice-studio-server.autoflow-ghx.workers.dev/admin
+- License endpoint: https://ghx-voice-studio-server.autoflow-ghx.workers.dev/api/access
+- Client access is matched by the Google account email.
+- The Owner adds, edits, suspends, renews, or deletes subscriptions from the dashboard.
+- Global Access can disable or re-enable service access.
+- An empty expiry means no expiry date; expired or inactive clients are denied.
+
+## Quick Start (Users)
+
+1. Open the notebook using the Colab link above.
+2. Select **Runtime → Change runtime type → T4 GPU** and save.
+3. In **Step 1 — Verify Your Access**, enter the Gmail registered by GHX Studio and run the cell.
+4. Sign in to Colab with that same Google account and approve account verification.
+5. When **ACCESS GRANTED** appears, run **Step 2 — Launch GHX VOICE STUDIO**.
+6. Wait for the public Gradio link and open the studio.
+
+## Owner workflow
+
+1. Open the [GHX VOICE STUDIO Admin Dashboard](https://ghx-voice-studio-server.autoflow-ghx.workers.dev/admin).
+2. Sign in with the Owner account.
+3. Add a client using their Google email, plan, optional expiry date, and notes.
+4. Use Edit to change the plan/expiry or deactivate the client. Use Delete only to permanently remove the client.
+5. Keep Global Access ON for normal service operation.
 
 ## Features
 
 | Feature | Detail |
-|---------|--------|
-| **Text to Speech** | 600+ languages, voice design presets |
-| **Voice Cloning** | 3–10 sec reference audio, zero-shot |
-| **Save Voice** | Save cloned voices and reuse in TTS |
-| **Subtitles** | Optional SRT generation |
-| **Output** | 320 kbps MP3 download |
-| **Access control** | Paid / subscription via Google Sheet |
+|---|---|
+| Text to Speech | 600+ languages, voice design presets |
+| Voice Cloning | 3–10 sec reference audio, zero-shot |
+| Save Voice | Save cloned voices and reuse them |
+| Subtitles | Optional SRT generation |
+| Output | 320 kbps MP3 download |
+| Access control | Cloudflare Worker + D1 admin dashboard |
+
+## Requirements
+
+- A Google account approved by GHX Studio.
+- Google Colab with an NVIDIA GPU runtime (T4 recommended).
+
+## Support
+
+WhatsApp: [0341-4657696](https://wa.me/923414657696)
+
+## Repository files
+
+- `GHX_VOICE_STUDIO.ipynb` — main Colab notebook.
+- `README.md` — current setup and owner instructions.
+- `GHX_Access_Control_AppsScript.gs` and `GHX_Sheet_Template_README.txt` — legacy Google Sheets reference files only; they are not used by the active notebook.
 
 ---
 
-## Quick Start (Users)
-
-1. Click **Open in Colab** above (or open `GHX_VOICE_STUDIO.ipynb`).
-2. **Runtime → Change runtime type → GPU (T4)** → Save.
-3. **Step 1:** Enter your **registered Gmail** → Run the cell.
-4. Wait for `Access Granted`.
-5. **Step 2:** Run the cell (first time ~2–3 minutes).
-6. Open the public **`.gradio.live`** link and use the studio.
-
-### Requirements
-
-- A Gmail that the owner has added to the access list.
-- Google Colab account with GPU runtime.
-
-### Support
-
-- **WhatsApp:** [0341-4657696](https://wa.me/923414657696)
-
----
-
-## For Owner (GHX Studio)
-
-### Repo files
-
-```
-GHX-Voice-Studio-/
-├── GHX_VOICE_STUDIO.ipynb      # Main Colab notebook
-├── GHX_Access_Control_AppsScript.gs  # Access API (reference copy)
-├── GHX_Sheet_Template_README.txt  # Sheet setup notes
-└── README.md
-```
-
-### Add a new customer
-
-1. Open your **Google Sheet** (linked to Apps Script).
-2. Add a new row:
-
-| Email | Plan | Expires | Active |
-|-------|------|---------|--------|
-| client@gmail.com | monthly | 2026-12-31 | YES |
-
-3. Send the client:
-   - This repo’s **Open in Colab** link
-   - Instruction to use the **same Gmail** in Step 1
-
-### Disable a customer
-
-- Set **Active** = `NO`, or set **Expires** to a past date.
-
-### Master off switch
-
-- Sheet cell **F1** = `OFF` → blocks everyone.
-
-### Access API
-
-- Web App URL is already set inside the notebook Step 1 cell.
-- Secret key: `ghx_secure_key_2026` (must match Apps Script `SECRET_KEY`).
-
----
-
-## Push to GitHub (first time)
-
-```bash
-# 1) Create empty repo on GitHub named: GHX-Voice-Studio-
-# 2) On your PC:
-
-git clone https://github.com/GHX-STUDIO-786/GHX-Voice-Studio-.git
-cd GHX-Voice-Studio-
-
-# Copy these files into the folder:
-#   GHX_VOICE_STUDIO.ipynb
-#   GHX_Access_Control_AppsScript.gs
-#   GHX_Sheet_Template_README.txt
-#   README.md
-
-git add .
-git commit -m "GHX VOICE STUDIO by GHX Studio"
-git push -u origin main
-```
-
-Working Colab URL format:
-
-```text
-https://colab.research.google.com/github/GHX-STUDIO-786/GHX-Voice-Studio-/blob/main/GHX_VOICE_STUDIO.ipynb
-```
-
----
-
-## License & use
-
-Private tool by **GHX Studio**.  
-Only clone voices you have permission to use.  
-Unauthorized redistribution is not allowed.
-
----
-
-**Developed by GHX Studio** · WhatsApp [0341-4657696](https://wa.me/923414657696)
+**Developed by GHX Studio**. Only clone voices you have permission to use.
